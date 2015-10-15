@@ -1,4 +1,10 @@
 ## MC_production
+Ho seguito un po' questa twiki
+
+https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookGenIntro
+
+https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchool2015GeneratorExerciseatBari
+
 ```
 CMSSW_7_5_0_pre4
 cmsrel CMSSW_7_5_0_pre4
@@ -6,23 +12,20 @@ cd CMSSW_7_5_0_pre4/src
 cmsenv
 ```
 
-La chiave e' tutta nella configuration card, per il quale devi conoscere il CMSSW configuration language
+Ti serve sicuramente un .py da lanciare con cmsDriver.py
 
-https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookConfigFileIntro
-
-
-
+esempio Configuration/GenProduction/python/ThirteenTeV/RSGravitonToZZ_kMpl01_M_1000_TuneCUETP8M1_13TeV_pythia8_cfi.py
 
 cmsDriver.py Configuration/GenProduction/python/ThirteenTeV/RSGravitonToZZ_kMpl01_M_1000_TuneCUETP8M1_13TeV_pythia8_cfi.py --fileout file:RSGravitonToZZ_kMpl01_M_1000_TuneCUETP8M1_13TeV_pythia8_FULLSIM.root --mc --eventcontent AODSIM --datatier GEN-SIM --conditions auto:mc --beamspot Realistic8TeVCollision --step GEN,SIM,DIGI,L1,DIGI2RAW,HLT:GRun,RAW2DIGI,L1Reco,RECO --python_filename RSGravitonToZZ_kMpl01_M_1000_TuneCUETP8M1_13TeV_pythia8_FULLSIM_cfg.py --customise Configuration/DataProcessing/Utils.addMonitoring -n 64
 
+Se fai caso viene generato un altro .py e un .root. Volendo il .py puo' essere girato con cmsRun
 
 Mo non so perche' FASTSIM non funziona, ma insomma non importa
 
-cmsDriver crea un .py  (--fileout) che volendo puoi girare con cmsRun
 
-Ah ho capito: ci sono 2 FILE, il secondo dei quali viene creato nella cartella work e che fa gli import
+**Questo in generale**, adesso supponiamo tu voglia generare Zprimo SSM con una certa width, come fai a scrivere il .py da dare in pasto a cmsDriver ?
 
-il secondo file .py  viene chiamato "configuration file"
+La cosa piu' facile e':
 
 https://github.com/cms-sw/genproductions/tree/master/python/ThirteenTeV
 
