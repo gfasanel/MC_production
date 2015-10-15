@@ -3,8 +3,7 @@ from DataFormats.FWLite import Events, Handle
 ROOT.gROOT.SetStyle('Plain') # white background
 #events = Events ('ZprimeToEE_M_5000_Tune4C_13TeV_pythia8_FULLSIM.root') #this is AOD
 
-#files=['ZprimeToEE_M_3000_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width50_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width100_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width200_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width300_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width500_Tune4C_13TeV_pythia8_FULLSIM.root']
-files=['ZprimeToEE_M_3000_width500_Tune4C_13TeV_pythia8_FULLSIM.root']
+files=['ZprimeToEE_M_3000_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width50_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width100_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width200_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width300_Tune4C_13TeV_pythia8_FULLSIM.root','ZprimeToEE_M_3000_width500_Tune4C_13TeV_pythia8_FULLSIM.root']
 
 for file in files:
     events = Events (file) 
