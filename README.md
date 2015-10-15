@@ -40,4 +40,9 @@ https://cmssdt.cern.ch/SDT/doxygen/CMSSW_7_4_9/doc/html/d0/d6d/classreco_1_1GsfE
 Manuale di Pythia
 http://home.thep.lu.se/~torbjorn/pythia81html/Welcome.html
 
-Gli LHE Les Houches file (dal posto dove gli esperti di MC si incontrano e decidono gli standard), sono gli output di generatore da matchare con parton showering ecc
+In generale, i generatori NNLO non fanno il parton showering, ma producono dei file LHE con il diagramma partonico. Tale diagramma deve essere poi correttamente matchato con 
+inital state radiation, final state radiation e parton showering.
+Gli LHE Les Houches file (dal posto dove gli esperti di MC si incontrano e decidono gli standard), sono gli output di generatore da matchare con algoritmi di parton showering,
+tipo ALPGEN di Mangano.
+
+Pythia ha la particolarita' di poter essere stand-alone cioe' fa tutto lui, diagramma partonico e showering e quindi non produce gli LHE (e' quello che sto facendo in questo README) oppure puo' anche produrre solo gli LHE da dover poi matchare con lo showering (non e' il mio caso)
