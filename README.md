@@ -31,7 +31,6 @@ https://github.com/cms-sw/genproductions/tree/master/python/ThirteenTeV
 
 navighi un po' e ti trovi Zprimo. meglio ancora te lo cloni e vabbe
 
-
 Al che poi per fare i plot
 http://cmslxr.fnal.gov/lxr/search?v=CMSSW_7_6_X_2015-09-24-2300&_string=&_advanced=&_filestring=&_casesensitive=
 
@@ -40,3 +39,5 @@ https://cmssdt.cern.ch/SDT/doxygen/CMSSW_7_4_9/doc/html/d0/d6d/classreco_1_1GsfE
 
 Manuale di Pythia
 http://home.thep.lu.se/~torbjorn/pythia81html/Welcome.html
+
+Gli LHE Les Houches file (dal posto dove gli esperti di MC si incontrano e decidono gli standard), sono gli output di generatore da matchare con parton showering ecc
